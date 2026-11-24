@@ -54,14 +54,14 @@
   <h1>Los programas electorales, en un solo sitio</h1>
   <p class="entradilla">Enlaces directos a los programas que cada candidatura presenta a las elecciones al Congreso y al Senado. Sin resúmenes ni valoraciones: solo el documento original para que lo leas tú.</p>
   <div class="meta">
-    <span><strong>Comprobado:</strong> 24 de noviembre de 2026</span>
+    <span><strong>Comprobado:</strong> 25 de noviembre de 2026</span>
     <span><strong>Orden:</strong> alfabético</span>
   </div>
 </header>
 
 <div class="leyenda">
   <p>En España no se vota directamente al presidente del Gobierno: se votan listas al Congreso por provincia y luego el Congreso elige al presidente. Aquí aparecen primero las candidaturas de ámbito estatal con aspirante a la Presidencia y después las demás formaciones con representación en el Congreso.</p>
-  <p><strong>Programa oficial</strong> = enlace a la web del propio partido. <strong>Copia en prensa</strong> = el PDF publicado por un medio cuando el partido no lo tiene accesible en su web.</p>
+  <p>Todos los enlaces son a webs oficiales de los partidos o de sus campañas, y se ha comprobado que cada documento es el programa para el 29 de noviembre de 2026.</p>
 </div>
 
 <h2>Candidaturas a la Presidencia del Gobierno</h2>
@@ -74,46 +74,44 @@
 
 <footer>
   <p>Página independiente y sin afiliación a ningún partido. Si un enlace falla o un partido publica su programa más tarde, la lista se actualizará.</p>
-  <p>Fuentes de comprobación: webs oficiales de cada partido, <a href="https://www.boe.es">BOE</a> (candidaturas proclamadas) y prensa (Artículo 14, Demócrata, El Independiente, ElNacional.cat, Telecinco).</p>
+  <p>Fuentes de comprobación: webs oficiales de cada partido, <a href="https://www.boe.es">BOE</a> (candidaturas proclamadas) y prensa (Artículo 14, ElNacional.cat, Telecinco) para los nombres de los candidatos.</p>
 </footer>
 </div>
 
 <script>
 const estatales = [
   { partido:"Frente Amplio", largo:"Movimiento Sumar, Izquierda Unida, Más Madrid y Comuns", candidato:"Ada Colau", titulo:"«Un voto como una casa»",
-    enlaces:[{t:"Copia en prensa (PDF)", u:"https://www.democrata.es/uploads/s1/35/42/91/4/programafrenteamplio.pdf", s:true}],
-    aviso:"No hemos encontrado el programa en una web oficial de la coalición." },
+    enlaces:[{t:"Programa oficial (PDF)", u:"https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf"},{t:"Página del programa", u:"https://frenteamplio.info/programa/", s:true}] },
   { partido:"Partido Popular", largo:"PP", candidato:"Alberto Núñez Feijóo", titulo:"«La Reconstrucción Nacional»",
     enlaces:[{t:"Programa oficial (PDF)", u:"https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf"},{t:"Web del partido", u:"https://www.pp.es", s:true}] },
   { partido:"Partido Socialista Obrero Español", largo:"PSOE", candidato:"Pedro Sánchez", titulo:"«La fuerza de seguir avanzando»",
-    enlaces:[{t:"Web del partido", u:"https://www.psoe.es"},{t:"Copia en prensa (PDF)", u:"https://www.elindependiente.com/wp-content/uploads/2026/11/PROGRAMAPSOE29N26.pdf", s:true}],
-    aviso:"La web del PSOE bloquea el acceso automático; el programa se consulta en su portada." },
-  { partido:"Podemos", largo:"Concurre por separado en la mayoría de provincias", candidato:"Irene Montero", titulo:"«Paz, casa y trabajo»",
+    enlaces:[{t:"Programa oficial (PDF)", u:"https://lafuerzadelagente.es/programa/PROGRAMA_PSOE_29N26.pdf"},{t:"Página del programa", u:"https://lafuerzadelagente.es/programa", s:true},{t:"Lectura fácil (PDF)", u:"https://lafuerzadelagente.es/programa/programa-psoe-lectura-facil.pdf", s:true}] },
+  { partido:"Podemos", largo:"Concurre por separado en la mayoría de provincias", candidato:"Irene Montero", titulo:"«Así de básico: paz, casa y trabajo»",
     enlaces:[{t:"Programa oficial (PDF)", u:"https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf"},{t:"Web del partido", u:"https://podemos.info", s:true}] },
   { partido:"Vox", largo:"", candidato:"Santiago Abascal", titulo:"«Es sentido común»",
-    enlaces:[{t:"Programa oficial", u:"https://www.voxespana.es/programa/programa-electoral-vox"},{t:"Copia en prensa (PDF)", u:"https://www.elindependiente.com/wp-content/uploads/2026/11/programa-elecct-vox.pdf", s:true}] },
+    enlaces:[{t:"Programa oficial (PDF)", u:"https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf"},{t:"Web del partido", u:"https://www.voxespana.es", s:true}] },
 ];
 
 const autonomicas = [
-  { partido:"Bloque Nacionalista Galego", largo:"BNG", candidato:"Néstor Rego", titulo:"",
-    enlaces:[{t:"Compromisos oficiales", u:"https://xerais2026.bng.gal/compromisos/"},{t:"Web de campaña", u:"https://xerais2026.bng.gal/", s:true}] },
-  { partido:"Coalición Canaria", largo:"CC", candidato:"Cristina Valido", titulo:"",
+  { partido:"Bloque Nacionalista Galego", largo:"BNG", candidato:"Néstor Rego", titulo:"«Dez compromisos do BNG»",
+    enlaces:[{t:"Compromisos oficiales (PDF, gallego)", u:"https://xerais2026.bng.gal/wp-content/uploads/2026/11/bng-xerais-2026-dez-compromisos.pdf"},{t:"Web de campaña", u:"https://xerais2026.bng.gal/compromisos/", s:true}] },
+  { partido:"Coalición Canaria", largo:"CC", candidato:"Cristina Valido", titulo:"«Defiende Canarias»",
     enlaces:[{t:"Programa oficial (PDF)", u:"https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf"}] },
   { partido:"Compromís – Front Valencià", largo:"", candidato:"Àgueda Micó", titulo:"",
-    enlaces:[{t:"Programa oficial (PDF)", u:"https://compromis.net/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-FRONTVALENCIA.pdf"}] },
+    enlaces:[{t:"Programa oficial (PDF, valenciano)", u:"https://compromis.net/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-FRONTVALENCIA.pdf"},{t:"Página de programas", u:"https://compromis.net/info/programes/", s:true}] },
   { partido:"EAJ-PNV", largo:"Partido Nacionalista Vasco", candidato:"Maribel Vaquero", titulo:"",
     enlaces:[{t:"Programa oficial", u:"https://www.eaj-pnv.eus/es/programa-elecciones-generales-2026/"}] },
   { partido:"EH Bildu", largo:"", candidato:"Oskar Matute", titulo:"",
-    enlaces:[{t:"Programa oficial", u:"https://posibleegin.ehbildu.eus/programa/"}] },
+    enlaces:[{t:"Programa oficial (PDF)", u:"https://posibleegin.ehbildu.eus/wp-content/uploads/2026/11/PROGRAMA-CAS.pdf"},{t:"Página del programa", u:"https://posibleegin.ehbildu.eus/es/programa/", s:true}] },
   { partido:"Esquerra Republicana", largo:"ERC", candidato:"Gabriel Rufián", titulo:"",
     enlaces:[{t:"Web del partido", u:"https://www.esquerra.cat"}],
-    aviso:"Ha presentado programa, pero no lo hemos encontrado publicado en su web." },
+    aviso:"A 25 de noviembre no ha publicado el programa en su web." },
   { partido:"Junts per Catalunya", largo:"Junts", candidato:"Míriam Nogueras", titulo:"",
     enlaces:[{t:"Web del partido", u:"https://junts.cat"}],
-    aviso:"Programa no localizado todavía en su web." },
+    aviso:"A 25 de noviembre no ha publicado el programa en su web." },
   { partido:"Unión del Pueblo Navarro", largo:"En coalición con el PP en Navarra", candidato:"Leticia San Martín", titulo:"",
     enlaces:[{t:"Web del partido", u:"https://www.upn.org"}],
-    aviso:"Programa no localizado todavía en su web." },
+    aviso:"A 25 de noviembre no ha publicado el programa en su web." },
 ];
 
 function pinta(id, datos){
