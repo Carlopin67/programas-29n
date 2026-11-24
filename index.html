@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programas electorales · Elecciones generales 29 de noviembre de 2026</title>
+<meta name="description" content="Enlaces a los programas electorales de todas las candidaturas a las elecciones generales del 29 de noviembre de 2026 en España.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --papel:#faf8f4; --tinta:#1b1b1b; --gris:#6b6760; --linea:#dcd7cd; --acento:#9c2a1d;
+  }
+  *{box-sizing:border-box}
+  html{background:var(--papel)}
+  body{margin:0;color:var(--tinta);font:16px/1.55 Inter,system-ui,sans-serif}
+  .envoltura{max-width:980px;margin:0 auto;padding:0 22px}
+  header{border-bottom:3px double var(--tinta);padding:42px 0 26px}
+  .antetitulo{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--acento);font-weight:600;margin:0 0 10px}
+  h1{font-family:"Source Serif 4",Georgia,serif;font-size:clamp(32px,5vw,50px);line-height:1.08;margin:0 0 14px;font-weight:700}
+  .entradilla{font-family:"Source Serif 4",Georgia,serif;font-size:19px;color:#3a3732;max-width:720px;margin:0}
+  .meta{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:20px;font-size:14px;color:var(--gris)}
+  .meta strong{color:var(--tinta);font-weight:600}
+  h2{font-family:"Source Serif 4",Georgia,serif;font-size:26px;margin:46px 0 4px}
+  .nota-seccion{color:var(--gris);margin:0 0 18px;font-size:15px}
+  .lista{border-top:1px solid var(--tinta)}
+  .fila{display:grid;grid-template-columns:1.3fr 1fr 1.6fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--linea);align-items:start}
+  .partido{font-family:"Source Serif 4",Georgia,serif;font-size:21px;font-weight:600;line-height:1.2}
+  .siglas-largas{display:block;font-family:Inter,sans-serif;font-size:13px;color:var(--gris);font-weight:400;margin-top:3px}
+  .etiqueta{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--gris);display:block;margin-bottom:2px}
+  .candidato{font-weight:500}
+  .programa-titulo{font-style:italic;font-family:"Source Serif 4",Georgia,serif;font-size:17px;margin-bottom:8px}
+  .enlaces{display:flex;flex-wrap:wrap;gap:8px}
+  .enlaces a{display:inline-block;padding:6px 12px;border:1px solid var(--tinta);color:var(--tinta);text-decoration:none;font-size:14px;font-weight:500}
+  .enlaces a:hover{background:var(--tinta);color:var(--papel)}
+  .enlaces a.secundario{border-color:var(--linea);color:var(--gris)}
+  .enlaces a.secundario:hover{background:var(--linea);color:var(--tinta)}
+  .aviso{font-size:13px;color:var(--gris);margin-top:6px}
+  .leyenda{background:#f1ede5;border-left:3px solid var(--acento);padding:14px 18px;font-size:15px;margin-top:34px}
+  .leyenda p{margin:0 0 6px}.leyenda p:last-child{margin:0}
+  footer{margin:56px 0 40px;padding-top:18px;border-top:1px solid var(--tinta);font-size:13px;color:var(--gris)}
+  footer a{color:var(--gris)}
+  @media (max-width:720px){
+    .fila{grid-template-columns:1fr;gap:8px}
+    header{padding-top:28px}
+  }
+</style>
+</head>
+<body>
+<div class="envoltura">
+<header>
+  <p class="antetitulo">Elecciones generales · 29 de noviembre de 2026</p>
+  <h1>Los programas electorales, en un solo sitio</h1>
+  <p class="entradilla">Enlaces directos a los programas que cada candidatura presenta a las elecciones al Congreso y al Senado. Sin resúmenes ni valoraciones: solo el documento original para que lo leas tú.</p>
+  <div class="meta">
+    <span><strong>Comprobado:</strong> 24 de noviembre de 2026</span>
+    <span><strong>Orden:</strong> alfabético</span>
+  </div>
+</header>
+
+<div class="leyenda">
+  <p>En España no se vota directamente al presidente del Gobierno: se votan listas al Congreso por provincia y luego el Congreso elige al presidente. Aquí aparecen primero las candidaturas de ámbito estatal con aspirante a la Presidencia y después las demás formaciones con representación en el Congreso.</p>
+  <p><strong>Programa oficial</strong> = enlace a la web del propio partido. <strong>Copia en prensa</strong> = el PDF publicado por un medio cuando el partido no lo tiene accesible en su web.</p>
+</div>
+
+<h2>Candidaturas a la Presidencia del Gobierno</h2>
+<p class="nota-seccion">Formaciones que se presentan en toda España con un candidato o candidata a presidir el Gobierno.</p>
+<div class="lista" id="estatales"></div>
+
+<h2>Otras candidaturas con representación en el Congreso</h2>
+<p class="nota-seccion">Partidos de ámbito autonómico. Se indica quién encabeza su lista principal.</p>
+<div class="lista" id="autonomicas"></div>
+
+<footer>
+  <p>Página independiente y sin afiliación a ningún partido. Si un enlace falla o un partido publica su programa más tarde, la lista se actualizará.</p>
+  <p>Fuentes de comprobación: webs oficiales de cada partido, <a href="https://www.boe.es">BOE</a> (candidaturas proclamadas) y prensa (Artículo 14, Demócrata, El Independiente, ElNacional.cat, Telecinco).</p>
+</footer>
+</div>
+
+<script>
+const estatales = [
+  { partido:"Frente Amplio", largo:"Movimiento Sumar, Izquierda Unida, Más Madrid y Comuns", candidato:"Ada Colau", titulo:"«Un voto como una casa»",
+    enlaces:[{t:"Copia en prensa (PDF)", u:"https://www.democrata.es/uploads/s1/35/42/91/4/programafrenteamplio.pdf", s:true}],
+    aviso:"No hemos encontrado el programa en una web oficial de la coalición." },
+  { partido:"Partido Popular", largo:"PP", candidato:"Alberto Núñez Feijóo", titulo:"«La Reconstrucción Nacional»",
+    enlaces:[{t:"Programa oficial (PDF)", u:"https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-2026-RECONSTRUCCION-NACIONAL.pdf"},{t:"Web del partido", u:"https://www.pp.es", s:true}] },
+  { partido:"Partido Socialista Obrero Español", largo:"PSOE", candidato:"Pedro Sánchez", titulo:"«La fuerza de seguir avanzando»",
+    enlaces:[{t:"Web del partido", u:"https://www.psoe.es"},{t:"Copia en prensa (PDF)", u:"https://www.elindependiente.com/wp-content/uploads/2026/11/PROGRAMAPSOE29N26.pdf", s:true}],
+    aviso:"La web del PSOE bloquea el acceso automático; el programa se consulta en su portada." },
+  { partido:"Podemos", largo:"Concurre por separado en la mayoría de provincias", candidato:"Irene Montero", titulo:"«Paz, casa y trabajo»",
+    enlaces:[{t:"Programa oficial (PDF)", u:"https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf"},{t:"Web del partido", u:"https://podemos.info", s:true}] },
+  { partido:"Vox", largo:"", candidato:"Santiago Abascal", titulo:"«Es sentido común»",
+    enlaces:[{t:"Programa oficial", u:"https://www.voxespana.es/programa/programa-electoral-vox"},{t:"Copia en prensa (PDF)", u:"https://www.elindependiente.com/wp-content/uploads/2026/11/programa-elecct-vox.pdf", s:true}] },
+];
+
+const autonomicas = [
+  { partido:"Bloque Nacionalista Galego", largo:"BNG", candidato:"Néstor Rego", titulo:"",
+    enlaces:[{t:"Compromisos oficiales", u:"https://xerais2026.bng.gal/compromisos/"},{t:"Web de campaña", u:"https://xerais2026.bng.gal/", s:true}] },
+  { partido:"Coalición Canaria", largo:"CC", candidato:"Cristina Valido", titulo:"",
+    enlaces:[{t:"Programa oficial (PDF)", u:"https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf"}] },
+  { partido:"Compromís – Front Valencià", largo:"", candidato:"Àgueda Micó", titulo:"",
+    enlaces:[{t:"Programa oficial (PDF)", u:"https://compromis.net/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-FRONTVALENCIA.pdf"}] },
+  { partido:"EAJ-PNV", largo:"Partido Nacionalista Vasco", candidato:"Maribel Vaquero", titulo:"",
+    enlaces:[{t:"Programa oficial", u:"https://www.eaj-pnv.eus/es/programa-elecciones-generales-2026/"}] },
+  { partido:"EH Bildu", largo:"", candidato:"Oskar Matute", titulo:"",
+    enlaces:[{t:"Programa oficial", u:"https://posibleegin.ehbildu.eus/programa/"}] },
+  { partido:"Esquerra Republicana", largo:"ERC", candidato:"Gabriel Rufián", titulo:"",
+    enlaces:[{t:"Web del partido", u:"https://www.esquerra.cat"}],
+    aviso:"Ha presentado programa, pero no lo hemos encontrado publicado en su web." },
+  { partido:"Junts per Catalunya", largo:"Junts", candidato:"Míriam Nogueras", titulo:"",
+    enlaces:[{t:"Web del partido", u:"https://junts.cat"}],
+    aviso:"Programa no localizado todavía en su web." },
+  { partido:"Unión del Pueblo Navarro", largo:"En coalición con el PP en Navarra", candidato:"Leticia San Martín", titulo:"",
+    enlaces:[{t:"Web del partido", u:"https://www.upn.org"}],
+    aviso:"Programa no localizado todavía en su web." },
+];
+
+function pinta(id, datos){
+  const caja = document.getElementById(id);
+  for(const p of datos){
+    const fila = document.createElement("div"); fila.className="fila";
+    fila.innerHTML = `
+      <div class="partido">${p.partido}${p.largo?`<span class="siglas-largas">${p.largo}</span>`:""}</div>
+      <div><span class="etiqueta">${id==="estatales"?"Candidato/a":"Encabeza la lista"}</span><span class="candidato">${p.candidato}</span></div>
+      <div>${p.titulo?`<div class="programa-titulo">${p.titulo}</div>`:""}
+        <div class="enlaces">${p.enlaces.map(e=>`<a href="${e.u}" target="_blank" rel="noopener"${e.s?' class="secundario"':""}>${e.t}</a>`).join("")}</div>
+        ${p.aviso?`<div class="aviso">${p.aviso}</div>`:""}
+      </div>`;
+    caja.appendChild(fila);
+  }
+}
+pinta("estatales", estatales);
+pinta("autonomicas", autonomicas);
+</script>
+</body>
+</html>
