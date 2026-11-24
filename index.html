@@ -73,7 +73,7 @@
 <div class="lista" id="autonomicas"></div>
 
 <h2>Resto de candidaturas al Congreso</h2>
-<p class="nota-seccion">Todas las demás formaciones proclamadas en el BOE del 3 de noviembre de 2026. Se enlaza el programa cuando lo hemos encontrado en su web oficial y es de estas elecciones.</p>
+<p class="nota-seccion">Todas las demás formaciones proclamadas en el BOE del 3 de noviembre de 2026. Solo se enlaza el programa cuando está en la web oficial del partido y es de estas elecciones.</p>
 <div class="lista" id="resto"></div>
 
 <footer>
@@ -132,7 +132,7 @@ const autonomicas = [
 
 const resto = [
   { partido:"Adelante Andalucía", largo:"Andalucía", enlaces:[{t:"Programa oficial (PDF)", u:"https://programa.adelanteandalucia.org/programa-29n-adelante-andalucia.pdf"},{t:"Página del programa", u:"https://programa.adelanteandalucia.org/", s:true}] },
-  { partido:"Agenda Valenciana", largo:"Valencia" },
+  { partido:"Agenda Valenciana", largo:"Valencia", enlaces:[{t:"Programa oficial", u:"https://www.agendavalenciana.org/#programa"}] },
   { partido:"Agrupación Herreña Independiente", largo:"AHI · Santa Cruz de Tenerife" },
   { partido:"Agrupación Socialista Gomera", largo:"ASG · Santa Cruz de Tenerife" },
   { partido:"Alhora", largo:"Cataluña" },
@@ -153,18 +153,18 @@ const resto = [
   { partido:"Justicia y Ley", largo:"Álava" },
   { partido:"Liberación Canaria", largo:"Canarias" },
   { partido:"Nuevo Extremeñismo – Adelante Extremadura", largo:"NEX · Extremadura" },
-  { partido:"Partido Autónomos", largo:"Alicante, Valencia y Santa Cruz de Tenerife" },
+  { partido:"Partido Autónomos", largo:"Alicante, Valencia y Santa Cruz de Tenerife", enlaces:[{t:"Programa oficial (PDF)", u:"https://www.partidoautonomos.es/wp-content/uploads/2026/11/PARTIDO-AUTONOMOS-PROGRAMA-ELECCIONES-GENERALES-2026-29N.pdf"}] },
   { partido:"Partido Demócrata Social Jubilados Europeos", largo:"Ávila" },
-  { partido:"Partido Drago Canarias", largo:"Santa Cruz de Tenerife" },
-  { partido:"Partido Humanista", largo:"Madrid" },
+  { partido:"Partido Drago Canarias", largo:"Santa Cruz de Tenerife", enlaces:[{t:"Programa oficial (PDF)", u:"https://www.dragocanarias.com/wp-content/uploads/2026/11/Drago-Canarias-Programa-electoral-29N-2.pdf"}] },
+  { partido:"Partido Humanista", largo:"Madrid", enlaces:[{t:"Programa oficial (PDF)", u:"https://partidohumanista.es/Documentos/Programas/Programa%20Generales%202026.pdf"}] },
   { partido:"Partido Nacionalista de Castilla y León – Unión Reformista Ciudadana", largo:"PANCAL-URCI" },
   { partido:"Partido Regionalista del País Leonés", largo:"PREPAL · León, Salamanca y Zamora" },
   { partido:"Partido Unionista Estado de España", largo:"PUEDE · Asturias" },
   { partido:"Proyecto Alantre", largo:"León" },
   { partido:"Renacer Renaixer", largo:"Valencia" },
-  { partido:"Soria ¡Ya!", largo:"Soria" },
+  { partido:"Soria ¡Ya!", largo:"Soria", enlaces:[{t:"Programa oficial (PDF)", u:"https://soriaya.org/wp-content/uploads/2026/11/ProgramaGenerales_26.pdf"}] },
   { partido:"Tercera Edad en Acción", largo:"Murcia" },
-  { partido:"Teruel Existe", largo:"Teruel" },
+  { partido:"Teruel Existe", largo:"Teruel", enlaces:[{t:"Programa oficial (PDF)", u:"https://teruelexiste.info/wp-content/uploads/2026/11/Programa_Teruel_Existe_Completo_29N.pdf"}] },
   { partido:"Unidad del Pueblo Canario", largo:"Nueva Canarias, Podemos, IU y Sumar · Canarias" },
   { partido:"Unión Cartaginense", largo:"Murcia" },
   { partido:"Valencia Unida", largo:"Valencia" },
@@ -178,7 +178,7 @@ function pinta(id, datos){
       <div class="partido">${p.partido}${p.largo?`<span class="siglas-largas">${p.largo}</span>`:""}</div>
       <div>${p.candidato?`<span class="etiqueta">${id==="estatales"?"Candidato/a":"Encabeza la lista"}</span><span class="candidato">${p.candidato}</span>`:""}</div>
       <div>${p.titulo?`<div class="programa-titulo">${p.titulo}</div>`:""}
-        ${p.enlaces?"":`<div class="aviso">Programa no comprobado.</div>`}<div class="enlaces">${(p.enlaces||[]).map(e=>`<a href="${e.u}" target="_blank" rel="noopener"${e.s?' class="secundario"':""}>${e.t}</a>`).join("")}</div>
+        ${p.enlaces?"":`<div class="aviso">No hemos encontrado su programa en una web oficial.</div>`}<div class="enlaces">${(p.enlaces||[]).map(e=>`<a href="${e.u}" target="_blank" rel="noopener"${e.s?' class="secundario"':""}>${e.t}</a>`).join("")}</div>
         ${p.aviso?`<div class="aviso">${p.aviso}</div>`:""}
       </div>`;
     caja.appendChild(fila);
